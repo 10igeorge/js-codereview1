@@ -18,6 +18,7 @@ Enjoy!
 #### Setup/Installation Requirements
 
 ** See required technologies above **
+
 In the terminal:
 ```
 $ git clone https://github.com/10igeorge/js-codereview1.git
