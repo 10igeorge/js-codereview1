@@ -34,7 +34,7 @@ $green: #66CD00;
   display: none;
 }
 
-#inputBox, #userInput, #info {
+#inputBox, #userInput, #joinDate {
   font-size: 11px;
 }
 
@@ -42,10 +42,9 @@ $green: #66CD00;
   width: 200px;
 }
 
-li {
-  list-style-type: none;
-}
-
-.list-inline {
-  display: inline-block; 
+dl {
+  font-size: 11px;
+  float:right;
+  padding-right: 300px;
+  margin-top: -30px;
 }
