@@ -1,0 +1,146 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'gulp-sass',
+1 verbose cli   'sourcemaps',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.14.20
+3 info using node@v4.4.0
+4 verbose install initial load of /Users/Epicodus/Desktop/js-codereview1/package.json
+5 warn package.json ping-pong@1.0.0 No description
+6 warn package.json ping-pong@1.0.0 No repository field.
+7 warn package.json ping-pong@1.0.0 No README data
+8 verbose readDependencies loading dependencies from /Users/Epicodus/Desktop/js-codereview1/package.json
+9 silly cache add args [ 'gulp-sass', null ]
+10 verbose cache add spec gulp-sass
+11 silly cache add args [ 'sourcemaps', null ]
+12 verbose cache add spec sourcemaps
+13 silly cache add parsed spec Result {
+13 silly cache add   raw: 'gulp-sass',
+13 silly cache add   scope: null,
+13 silly cache add   name: 'gulp-sass',
+13 silly cache add   rawSpec: '',
+13 silly cache add   spec: 'latest',
+13 silly cache add   type: 'tag' }
+14 silly addNamed gulp-sass@latest
+15 verbose addNamed "latest" is being treated as a dist-tag for gulp-sass
+16 info addNameTag [ 'gulp-sass', 'latest' ]
+17 silly mapToRegistry name gulp-sass
+18 silly mapToRegistry using default registry
+19 silly mapToRegistry registry https://registry.npmjs.org/
+20 silly mapToRegistry uri https://registry.npmjs.org/gulp-sass
+21 verbose addNameTag registry:https://registry.npmjs.org/gulp-sass not in flight; fetching
+22 silly cache add parsed spec Result {
+22 silly cache add   raw: 'sourcemaps',
+22 silly cache add   scope: null,
+22 silly cache add   name: 'sourcemaps',
+22 silly cache add   rawSpec: '',
+22 silly cache add   spec: 'latest',
+22 silly cache add   type: 'tag' }
+23 silly addNamed sourcemaps@latest
+24 verbose addNamed "latest" is being treated as a dist-tag for sourcemaps
+25 info addNameTag [ 'sourcemaps', 'latest' ]
+26 silly mapToRegistry name sourcemaps
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry uri https://registry.npmjs.org/sourcemaps
+30 verbose addNameTag registry:https://registry.npmjs.org/sourcemaps not in flight; fetching
+31 verbose request uri https://registry.npmjs.org/gulp-sass
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 10:05:51 PM
+34 verbose request id 28bc8be69a105a3d
+35 verbose etag "32XIKDBT0QWKJUDN3Q14LRNQZ"
+36 http request GET https://registry.npmjs.org/gulp-sass
+37 verbose request uri https://registry.npmjs.org/sourcemaps
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 10:05:52 PM
+40 http request GET https://registry.npmjs.org/sourcemaps
+41 http 304 https://registry.npmjs.org/gulp-sass
+42 verbose headers { date: 'Fri, 18 Mar 2016 05:03:02 GMT',
+42 verbose headers   via: '1.1 varnish',
+42 verbose headers   'cache-control': 'max-age=300',
+42 verbose headers   etag: '"32XIKDBT0QWKJUDN3Q14LRNQZ"',
+42 verbose headers   age: '33',
+42 verbose headers   connection: 'keep-alive',
+42 verbose headers   'x-served-by': 'cache-lax1432-LAX',
+42 verbose headers   'x-cache': 'HIT',
+42 verbose headers   'x-cache-hits': '1',
+42 verbose headers   'x-timer': 'S1458277382.520376,VS0,VE0',
+42 verbose headers   vary: 'Accept' }
+43 silly get cb [ 304,
+43 silly get   { date: 'Fri, 18 Mar 2016 05:03:02 GMT',
+43 silly get     via: '1.1 varnish',
+43 silly get     'cache-control': 'max-age=300',
+43 silly get     etag: '"32XIKDBT0QWKJUDN3Q14LRNQZ"',
+43 silly get     age: '33',
+43 silly get     connection: 'keep-alive',
+43 silly get     'x-served-by': 'cache-lax1432-LAX',
+43 silly get     'x-cache': 'HIT',
+43 silly get     'x-cache-hits': '1',
+43 silly get     'x-timer': 'S1458277382.520376,VS0,VE0',
+43 silly get     vary: 'Accept' } ]
+44 verbose etag https://registry.npmjs.org/gulp-sass from cache
+45 verbose get saving gulp-sass to /Users/Epicodus/.npm/registry.npmjs.org/gulp-sass/.cache.json
+46 verbose correctMkdir /Users/Epicodus/.npm correctMkdir not in flight; initializing
+47 silly addNameTag next cb for gulp-sass with tag latest
+48 silly addNamed gulp-sass@2.2.0
+49 verbose addNamed "2.2.0" is a plain semver version for gulp-sass
+50 silly cache afterAdd gulp-sass@2.2.0
+51 verbose afterAdd /Users/Epicodus/.npm/gulp-sass/2.2.0/package/package.json not in flight; writing
+52 verbose correctMkdir /Users/Epicodus/.npm correctMkdir not in flight; initializing
+53 verbose afterAdd /Users/Epicodus/.npm/gulp-sass/2.2.0/package/package.json written
+54 http 404 https://registry.npmjs.org/sourcemaps
+55 verbose headers { 'content-type': 'application/json',
+55 verbose headers   'cache-control': 'max-age=0',
+55 verbose headers   'content-length': '2',
+55 verbose headers   'accept-ranges': 'bytes',
+55 verbose headers   date: 'Fri, 18 Mar 2016 05:03:02 GMT',
+55 verbose headers   via: '1.1 varnish',
+55 verbose headers   age: '0',
+55 verbose headers   connection: 'keep-alive',
+55 verbose headers   'x-served-by': 'cache-lax1421-LAX',
+55 verbose headers   'x-cache': 'MISS',
+55 verbose headers   'x-cache-hits': '0',
+55 verbose headers   'x-timer': 'S1458277382.517585,VS0,VE87' }
+56 silly get cb [ 404,
+56 silly get   { 'content-type': 'application/json',
+56 silly get     'cache-control': 'max-age=0',
+56 silly get     'content-length': '2',
+56 silly get     'accept-ranges': 'bytes',
+56 silly get     date: 'Fri, 18 Mar 2016 05:03:02 GMT',
+56 silly get     via: '1.1 varnish',
+56 silly get     age: '0',
+56 silly get     connection: 'keep-alive',
+56 silly get     'x-served-by': 'cache-lax1421-LAX',
+56 silly get     'x-cache': 'MISS',
+56 silly get     'x-cache-hits': '0',
+56 silly get     'x-timer': 'S1458277382.517585,VS0,VE87' } ]
+57 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/sourcemaps
+57 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+57 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+57 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+57 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+57 verbose stack     at emitTwo (events.js:87:13)
+57 verbose stack     at Request.emit (events.js:172:7)
+57 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+57 verbose stack     at emitOne (events.js:82:20)
+57 verbose stack     at Request.emit (events.js:169:7)
+57 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+58 verbose statusCode 404
+59 verbose pkgid sourcemaps
+60 verbose cwd /Users/Epicodus/Desktop/js-codereview1
+61 error Darwin 15.3.0
+62 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "gulp-sass" "sourcemaps" "--save-dev"
+63 error node v4.4.0
+64 error npm  v2.14.20
+65 error code E404
+66 error 404 Registry returned 404 for GET on https://registry.npmjs.org/sourcemaps
+66 error 404
+66 error 404 'sourcemaps' is not in the npm registry.
+66 error 404 You should bug the author to publish it (or use the name yourself!)
+66 error 404 It was specified as a dependency of 'ping-pong'
+66 error 404
+66 error 404 Note that you can also install from a
+66 error 404 tarball, folder, http url, or git url.
+67 verbose exit [ 1, true ]
