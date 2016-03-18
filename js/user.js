@@ -8,7 +8,7 @@ exports.getRepos = function(user){
     $.get('https://api.github.com/users/'+user+'/repos?access_token=' + apiKey).then(function(repo){
       for(var i=0; i < repo.length; i++){
         if (repo[i].description.length != 0){
-          $('#results').append("<p><a href='https://github.com/10igeorge/"+repo[i].name+"'>"+repo[i].name+"</a></p><p id='repoInfo'>Created: "+moment(repo[i].created_at).format('LL')+"</p><p id='repoInfo'>"+repo[i].description+"</p><hr>");
+          $('#results').append("<p><a href='https://github.com/10igeorge/"+repo[i].name+"'>"+repo[i].name+"</a></p><p id='repoInfo'>Created: "+moment(repo[i].created_at).format('LL')+"</p><p id='repoInfo'>Description: "+repo[i].description+"</p><hr>");
         } else {
           $('#results').append("<p><a href='https://github.com/10igeorge/"+repo[i].name+"'>"+repo[i].name+"</p></a><p id='repoInfo'>Created: "+moment(repo[i].created_at).format('LL')+"</p><hr>");
         }
