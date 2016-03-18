@@ -5,7 +5,11 @@ exports.getRepos = function(user){
     console.log(response);
     $('#userImageResult').append("<img src='"+response.avatar_url+"'</img>");
     $('#usernameResult').append("<h3>"+response.login+"</h3>");
-    $('#repoNameResult').append(response.login);
+    $.get('https://api.github.com/users/'+user+'/repos?access_token=' + apiKey).then(function(repo){
+      for(var i=0; i < repo.length; i++){
+        $('#repoNameResult').append("<p>"+repo[i].name+"</p>");
+      };
+    });
   }).fail(function(error){
     console.log(error.responseJSON.message);
   });
