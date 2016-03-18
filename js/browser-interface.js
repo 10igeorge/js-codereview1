@@ -2,5 +2,9 @@ var users = require('./../js/users.js');
 var apiKey = require('./../.env').apiKey;
 
 $(document).ready(function(){
-  users.getRepos();
+  $("#searchButton").click(function(){
+    var username = $("#inputBox").val();
+    users.getRepos();
+    console.log(username);
+  });
 });
