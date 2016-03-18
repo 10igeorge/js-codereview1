@@ -9,7 +9,7 @@ exports.getRepos = function(user){
     $('#userLoginResult').append("<h3>"+response.login+"</h3>");
     $.get('https://api.github.com/users/'+user+'/repos?access_token=' + apiKey).then(function(repo){
       for(var i=0; i < repo.length; i++){
-        $('#repoNameResult').append("<p><a href='https://github.com/10igeorge/"+repo[i].name+"'>"+repo[i].name+"</p>");
+        // $('#repoNameResult').append("<p><a href='https://github.com/10igeorge/"+repo[i].name+"'>"+repo[i].name+"</p>");
         if (repo[i].description.length != 0){
           $('#repoNameResult').append("<li id='info'>"+repo[i].description+"</li>");
         }
