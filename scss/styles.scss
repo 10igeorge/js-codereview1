@@ -6,7 +6,7 @@ $green: #66CD00;
 }
 
 #title {
-  font-size: 150px;
+  font-size: 100px;
   text-align: right;
 }
 
@@ -15,25 +15,25 @@ $green: #66CD00;
 }
 
 #api {
-  font-size: 150px;
+  font-size: 100px;
   text-align: right;
   color: $green;
 }
 
 #octocat {
-  width: 243px;
+  width: 180px;
   float: left;
-  margin-top: -30px;
-}
-
-.container {
-  text-align: center;
-}
-
-#userInput, #inputBox {
-  font-size: 11px;
+  margin: -20px;
 }
 
 #searchButton {
   margin-top: -30px;
+}
+
+#results {
+  display: none;
+}
+
+#inputBox, #userInput {
+  font-size: 11px;
 }
