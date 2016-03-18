@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Geolocation and Google Maps API</title>
+    <title>GitHub API</title>
     <link rel="stylesheet" href="build/css/vendor.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
     <link rel="stylesheet" href="build/css/styles.css">
   </head>
   <body>
-    <h1>Basic example</h1>
+    <div class="container">
+      <h3>GitHub API</h3>
+      <h5>User Lookup</h5>
+      <form class="form-inline">
+        <label for="username" id="userInput">GitHub Username:</label><br>
+        <input type="text" id="inputBox"><br><br>
+      </form>
+      <button style="font-size: 11px;" type="button" class="btn btn-info btn-xs" id="searchButton">Search</button>
+      <div id="results">
+        <span id="userImageResult"></span>
+        <span id="usernameResult"></span>
+        <span id="repoNameResult"></span>
+        <span id="repoInfoResult"></span>
+      </div>
+    </div>
   </body>
 </html>
