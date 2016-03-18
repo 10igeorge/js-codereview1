@@ -3,6 +3,6 @@ var apiKey = require('./../.env').apiKey;
 
 $(document).ready(function(){
   $('#searchButton').click(function(){
-    user.getRepos($('#inputBox').val());
+    var userInfo = user.getRepos($('#inputBox').val());
   });
 });
