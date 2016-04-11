@@ -1,4 +1,4 @@
-# GitHub API
+# GitHubAPI
 
 #### Created By
 Isabelle George
