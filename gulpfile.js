@@ -5,6 +5,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var utilities = require('gulp-util');
 var del = require('del');
+var deploy = require('gulp-gh-pages');
 var jshint = require('gulp-jshint');
 var buildProduction = utilities.env.production;
 var lib = require('bower-files')({
@@ -102,6 +103,11 @@ gulp.task('bowerBuild', ['bower'], function(){
 
 gulp.task('htmlBuild', function(){
   browserSync.reload();
+});
+
+gulp.task('deploy', ['build'], function () {
+  return gulp.src("./dist/**/*")
+    .pipe(deploy())
 });
 
 gulp.task('cssBuild', function() {
